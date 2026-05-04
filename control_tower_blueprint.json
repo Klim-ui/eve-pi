@@ -1,0 +1,202 @@
+{
+  "project": "Gallente Control Tower Small Assembly",
+  "version": "1.0",
+  "date": "2026-05-04",
+  "final_product": {
+    "name": "Gallente Control Tower Small",
+    "item_id": 12235,
+    "base_price_isk": 125000000,
+    "assembly_time": "6:50:00",
+    "manufacturing_skill_required": "Industry Level 5",
+    "description": "Small control tower for low-security space dominance"
+  },
+  "required_components": {
+    "planetary_materials": [
+      {
+        "item": "Broadcast Node",
+        "quantity": 4,
+        "type": "T3",
+        "category": "Advanced Components",
+        "difficulty": "HIGH",
+        "estimated_unit_cost": 5000000,
+        "estimated_total_cost": 20000000
+      },
+      {
+        "item": "Integrity Response Drones",
+        "quantity": 9,
+        "type": "T3",
+        "category": "Drone Systems",
+        "difficulty": "HIGH",
+        "estimated_unit_cost": 2000000,
+        "estimated_total_cost": 18000000
+      },
+      {
+        "item": "Nano-Factory",
+        "quantity": 7,
+        "type": "T3",
+        "category": "Manufacturing",
+        "difficulty": "HIGH",
+        "estimated_unit_cost": 3000000,
+        "estimated_total_cost": 21000000
+      },
+      {
+        "item": "Organic Mortar Applicators",
+        "quantity": 7,
+        "type": "T3",
+        "category": "Structural",
+        "difficulty": "MEDIUM",
+        "estimated_unit_cost": 1500000,
+        "estimated_total_cost": 10500000
+      },
+      {
+        "item": "Recursive Computing Module",
+        "quantity": 4,
+        "type": "T3",
+        "category": "Computing",
+        "difficulty": "HIGH",
+        "estimated_unit_cost": 4000000,
+        "estimated_total_cost": 16000000
+      },
+      {
+        "item": "Self-Harmonizing Power Core",
+        "quantity": 4,
+        "type": "T3",
+        "category": "Power Systems",
+        "difficulty": "HIGH",
+        "estimated_unit_cost": 3500000,
+        "estimated_total_cost": 14000000
+      },
+      {
+        "item": "Sterile Conduits",
+        "quantity": 7,
+        "type": "T3",
+        "category": "Data Transfer",
+        "difficulty": "MEDIUM",
+        "estimated_unit_cost": 2000000,
+        "estimated_total_cost": 14000000
+      },
+      {
+        "item": "Wetware Mainframe",
+        "quantity": 4,
+        "type": "T3",
+        "category": "Computing",
+        "difficulty": "HIGH",
+        "estimated_unit_cost": 3000000,
+        "estimated_total_cost": 12000000
+      }
+    ],
+    "capital_components": [
+      {
+        "item": "Capital Construction Parts",
+        "quantity": 2,
+        "type": "Component",
+        "category": "Heavy Structural",
+        "acquisition": "Market or Trade",
+        "estimated_unit_cost": 30000000,
+        "estimated_total_cost": 60000000
+      }
+    ],
+    "total_estimated_cost": 185500000
+  },
+  "budget_allocation": {
+    "starting_isk": 80000000,
+    "strategy": "Self-manufacturing of T3 components + market purchase for Capital Parts",
+    "approach": {
+      "phase_1": "Build PI infrastructure (2-3 days)",
+      "phase_2": "Extract and process raw materials (5-7 days)",
+      "phase_3": "Manufacture T1 components (3-4 days)",
+      "phase_4": "Manufacture T2 components (4-5 days)",
+      "phase_5": "Manufacture T3 components (6-8 days)",
+      "phase_6": "Purchase Capital Construction Parts from market",
+      "phase_7": "Assemble Control Tower at manufacturing station (6:50:00)"
+    }
+  },
+  "raw_materials_required": {
+    "lava_planet_sources": {
+      "silicon": {"quantity": 1200, "priority": "CRITICAL", "usage": "Multiple chains"},
+      "fernite_alloy": {"quantity": 500, "priority": "HIGH", "usage": "Broadcast Node, Power Core"},
+      "super_conductors": {"quantity": 500, "priority": "HIGH", "usage": "Power Core, Mainframe"},
+      "precious_metals": {"quantity": 200, "priority": "MEDIUM", "usage": "Various T2 components"}
+    },
+    "barren_planet_sources": {
+      "carbon_compounds": {"quantity": 400, "priority": "HIGH", "usage": "Broadcast Node"},
+      "reactive_metals": {"quantity": 400, "priority": "HIGH", "usage": "Broadcast Node, Applicators"}
+    },
+    "temperate_planet_sources": {
+      "biofuels": {"quantity": 300, "priority": "MEDIUM", "usage": "Organic Mortar Applicators"},
+      "industrial_fibers": {"quantity": 150, "priority": "MEDIUM", "usage": "Structural components"}
+    },
+    "storm_planet_sources": {
+      "electrolytes": {"quantity": 200, "priority": "MEDIUM", "usage": "Integrity Response Drones"},
+      "plasmoids": {"quantity": 100, "priority": "LOW", "usage": "Exotic materials"}
+    }
+  },
+  "planet_infrastructure": {
+    "recommended_setup": "4 planets total",
+    "planets": [
+      {
+        "type": "Lava",
+        "quantity": 2,
+        "extractors_per_planet": 4,
+        "facilities_per_planet": {
+          "command_center": 1,
+          "basic_industry": 2,
+          "advanced_industry": 2,
+          "launchpad": 1
+        },
+        "purpose": "Primary manufacturing hub",
+        "products": "Broadcast Node, Power Core, Mainframe, Conduits"
+      },
+      {
+        "type": "Barren",
+        "quantity": 1,
+        "extractors_per_planet": 3,
+        "facilities_per_planet": {
+          "command_center": 1,
+          "basic_industry": 1,
+          "advanced_industry": 1,
+          "launchpad": 1
+        },
+        "purpose": "Support materials",
+        "products": "Polyaramids, Reactive Metals processing"
+      },
+      {
+        "type": "Temperate",
+        "quantity": 1,
+        "extractors_per_planet": 2,
+        "facilities_per_planet": {
+          "command_center": 1,
+          "basic_industry": 1,
+          "advanced_industry": 1,
+          "launchpad": 1
+        },
+        "purpose": "Organic materials",
+        "products": "Organic Mortar Applicators"
+      }
+    ]
+  },
+  "timeline": {
+    "total_duration_days": 21,
+    "phases": [
+      {"phase": "Infrastructure Setup", "duration_days": 2, "status": "Planning"},
+      {"phase": "Resource Extraction", "duration_days": 7, "status": "Planning"},
+      {"phase": "T1 Production", "duration_days": 4, "status": "Planning"},
+      {"phase": "T2 Production", "duration_days": 5, "status": "Planning"},
+      {"phase": "T3 Production", "duration_days": 8, "status": "Planning"},
+      {"phase": "Component Assembly", "duration_hours": 6.83, "status": "Planning"}
+    ]
+  },
+  "success_criteria": [
+    "All 8 T3 components manufactured successfully",
+    "2x Capital Construction Parts acquired",
+    "Manufacturing station reserved and ready",
+    "Assembly completes without interruption",
+    "Control Tower available for deployment to low-sec"
+  ],
+  "notes": {
+    "deployment": "Tower must be deployed in 0.7 security or lower",
+    "location": "All operations in The Forge region (Jita vicinity)",
+    "optimization": "Parallel production can reduce timeline to 14-18 days",
+    "scalability": "Setup can be modified for larger/smaller towers"
+  }
+}

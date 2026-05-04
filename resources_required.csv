@@ -1,0 +1,18 @@
+Component,Quantity,Type,P0_Base_Material,Difficulty,Source_Planets,Est_Time_Per_Unit,Notes
+Broadcast Node,4,T3,Silicon+Carbon+Metals,High,Lava+Barren,16h,Critical component
+Integrity Response Drones,9,T3,Metals+Electrolytes,High,Lava+Storm,16h,Defense system
+Nano-Factory,7,T3,Silicon+Metals,High,Lava+Barren,16h,Advanced production
+Organic Mortar Applicators,7,T3,Biofuels+Metals,Medium,Temperate+Lava,12h,Structural
+Recursive Computing Module,4,T3,Silicon+Metals,High,Lava+Barren,16h,Processing
+Self-Harmonizing Power Core,4,T3,Super Conductors+Metals,High,Lava,16h,Power system
+Sterile Conduits,7,T3,Silicon+Metals,Medium,Lava+Barren,12h,Data transfer
+Wetware Mainframe,4,T3,Silicon+Electronics,High,Lava+Barren,16h,Main processor
+Capital Construction Parts,2,Component,—,—,Market/Trade,—,Buy or trade for
+Silicon,~1000,T0,—,Low,Lava,—,Foundation material
+Fernite Alloy,~500,T0,—,Low,Lava,—,Alloy material
+Super Conductors,~500,T0,—,Low,Lava,—,Power material
+Carbon Compounds,~400,T0,—,Low,Barren,—,Organic base
+Reactive Metals,~400,T0,—,Low,Barren,—,Active alloy
+Biofuels,~200,T0,—,Low,Temperate,—,Organic fuel
+Electrolytes,~200,T0,—,Low,Storm,—,Chemical base
+Plasmoids,~100,T0,—,Very Low,Storm,—,Exotic material
